@@ -1,0 +1,49 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://srcc.oboi.ws/wallpapers/big_2021_oboi_chernaja_kozha_v_podtekah.jpg");
+
+  /* Set a specific height */
+  height: rem(280);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallaxContent {
+  padding-top: rem(105);
+  div {
+    display: inline-block;
+    color: $whitesmoke;
+    font-family: "Open Sans", SansSerif;
+  }
+}
+  .container{
+    max-width: 100%;
+  }
+
+
+#back-to-top {
+  position: fixed;
+  bottom: rem(20);
+  right: rem(20);
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  color: #444;
+  cursor: pointer;
+  font-size: rem(40);
+  border: 0;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  background-color: darkkhaki;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}

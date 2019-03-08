@@ -1,0 +1,23 @@
+.socialContent{
+  display: inline-flex;
+  text-decoration: none;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: rem(30);
+  cursor: pointer;
+  padding-left: 0;
+  li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: auto;
+    img{
+      width: rem(50);
+      height: rem(50);
+      opacity: 0.8;
+    }
+  }
+}
+#socialNetwork{
+  height: rem(170);
+  background-color: #3d2e42;
+}

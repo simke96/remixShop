@@ -1,0 +1,509 @@
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden; }
+  body #menu {
+    opacity: 0.93;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 55;
+    background: linear-gradient(black, gray, white);
+    height: 3.75rem; }
+    body #menu #logo {
+      float: left;
+      margin-top: 0rem;
+      margin-left: 3.125rem; }
+      body #menu #logo img {
+        height: 3.75rem;
+        width: 15.625rem; }
+    body #menu #sideMenu {
+      text-align: center;
+      height: 3.75rem; }
+      body #menu #sideMenu .img0 {
+        height: 3.75rem; }
+      body #menu #sideMenu span {
+        float: right;
+        margin-right: 1.875rem; }
+      body #menu #sideMenu .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        font-family: 'Bilbo Swash Caps','sans-serif';
+        right: 0;
+        background-color: black;
+        overflow-x: hidden;
+        padding-top: 3.75rem;
+        transition: 0.5s; }
+        body #menu #sideMenu .sidenav a, body #menu #sideMenu .sidenav #ukupnaCena {
+          text-align: center;
+          padding: 0.5rem 0.5rem 0.5rem 2rem;
+          text-decoration: none;
+          font-size: 2.5rem;
+          font-family: 'Bilbo Swash Caps','sans-serif';
+          color: #818181;
+          display: block;
+          transition: 0.3s; }
+        body #menu #sideMenu .sidenav a:hover, body #menu #sideMenu .sidenav .offcanvas a:focus {
+          color: #f1f1f1; }
+        body #menu #sideMenu .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 1.5625rem;
+          font-size: 2.25rem;
+          margin-left: 3.125rem; }
+
+#zbir {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  margin-top: 9.375rem; }
+  #zbir p {
+    margin-bottom: 0; }
+  #zbir input {
+    border: none;
+    font-size: 1.875rem;
+    background-color: transparent;
+    text-align: right;
+    width: 63%;
+    color: white; }
+
+.slider-inner, .slideImage {
+  height: 41.875rem; }
+
+.firstSliderText {
+  position: absolute;
+  top: 15.625rem;
+  right: 15%; }
+  .firstSliderText p {
+    color: #f5f5f5;
+    font-size: 2.625rem;
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    line-height: 1.875rem; }
+
+.secondSliderText {
+  position: absolute;
+  top: 35.625rem;
+  padding-left: 11.875rem;
+  height: 6.25rem;
+  background-color: #d2be9b;
+  opacity: 0.8; }
+  .secondSliderText p {
+    color: #674133;
+    font-size: 2.75rem;
+    margin-top: 0.875rem;
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    line-height: 2.1875rem; }
+
+#tabsHead {
+  margin-top: 3.75rem;
+  text-align: center;
+  font-family: "Bilbo Swash Caps", 'sans-serif';
+  text-shadow: 2px 2px 3px #000000;
+  cursor: default;
+  color: black; }
+
+.tab li.current {
+  background: #ededed;
+  color: #222; }
+
+.tabcontent.current {
+  display: inherit; }
+
+.tab {
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+  padding-left: 0;
+  margin-top: 2.5rem;
+  font-family: "Bilbo Swash Caps", 'sans-serif'; }
+  .tab li {
+    float: left;
+    text-align: center;
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 18%;
+    outline: none;
+    cursor: pointer;
+    padding: 0.125rem 0.5rem;
+    height: 2.5rem;
+    transition: 0.3s;
+    font-size: 1.625rem;
+    border: 1px solid gray;
+    color: #000000;
+    text-shadow: 2px 2px 4px #000000; }
+  .tab li.current {
+    background-color: #eaf0d6;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; }
+
+.tabcontent {
+  margin-top: 6.25rem;
+  margin-bottom: 5.3125rem;
+  display: none; }
+  .tabcontent .current {
+    border: none; }
+
+.more_articles {
+  display: none; }
+
+.bigImage {
+  margin: auto;
+  width: 100%;
+  height: 100%; }
+
+.row {
+  width: 78.125rem;
+  margin: 50px auto; }
+  .row :first-child {
+    margin: 0 auto; }
+  .row .articles {
+    margin: auto;
+    opacity: 1; }
+    .row .articles .article_name {
+      margin-top: 0.625rem;
+      margin-bottom: 0.125rem;
+      text-align: center;
+      font-family: "Andalus", 'sans-serif';
+      color: #000020;
+      font-size: 1rem; }
+    .row .articles .article_price {
+      float: left;
+      font-size: 0.875rem;
+      cursor: default;
+      color: green;
+      font-family: "Andalus", 'sans-serif'; }
+    .row .articles label {
+      float: right;
+      color: #000020;
+      font-family: "Andalus", 'sans-serif';
+      font-size: 0.9375rem; }
+    .row .articles img {
+      width: 14.375rem;
+      height: 14.375rem;
+      cursor: pointer;
+      transition: 0.5s; }
+      .row .articles img:hover {
+        opacity: 0.6;
+        transition: 0.5s; }
+
+.see_more {
+  text-align: center;
+  font-size: 2.1875rem;
+  cursor: pointer;
+  color: #000020;
+  font-family: "Bilbo Swash Caps", 'sans-serif'; }
+
+#headerAbout_photo img {
+  height: 25rem;
+  width: 100%; }
+
+#footerAbout {
+  margin-top: 0; }
+
+#aboutUsHeader h1 {
+  font-family: "Bilbo Swash Caps", 'sans-serif';
+  text-align: center;
+  margin-top: 3.125rem;
+  color: #525567;
+  font-size: 48px;
+  line-height: 29px; }
+
+#aboutUsContent {
+  width: 80%;
+  margin: auto;
+  margin-top: 3.125rem; }
+  #aboutUsContent h5 {
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #525567;
+    margin-top: 2.5rem; }
+  #aboutUsContent p {
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    color: #525567;
+    border-bottom: 1px dotted silver;
+    padding-bottom: 2.5rem; }
+    #aboutUsContent p:last-child {
+      border-bottom: none;
+      margin-bottom: 0rem; }
+
+.peopleImage img {
+  border-radius: 100%;
+  width: 12.5rem;
+  height: 12.5rem; }
+
+.people {
+  color: #b3b3b3;
+  margin: auto;
+  text-align: center; }
+
+.teamSection {
+  padding-top: 5.625rem;
+  width: 80%;
+  margin: auto; }
+
+#team {
+  margin-top: 4.375rem;
+  color: #b3b3b3;
+  background-image: url("https://srcc.oboi.ws/wallpapers/big_2021_oboi_chernaja_kozha_v_podtekah.jpg");
+  /* Set a specific height */
+  height: 40.625rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem;
+  color: #525567;
+  font-family: "Open Sans","SansSerif"; }
+  #team h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.1875rem;
+    margin-top: 3.125rem;
+    font-family: "Open Sans","SansSerif";
+    color: #b3b3b3; }
+  #team h5 {
+    margin-top: 1.25rem;
+    font-size: 1.125rem; }
+
+.carousel-indicators li {
+  background-color: gray; }
+
+.carousel-indicators .active {
+  background-color: white; }
+
+#sliderHeight {
+  height: 29.375rem; }
+
+#brands {
+  padding-bottom: 3.75rem; }
+
+.brandsTitle {
+  padding-top: 4.375rem;
+  padding-bottom: 3.125rem;
+  text-align: center;
+  font-family: "Open Sans","SansSerif";
+  color: #111111;
+  font-style: 2.6875rem;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.brandsContent {
+  width: 80%;
+  margin: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; }
+  .brandsContent img {
+    margin: auto;
+    display: block;
+    width: 10rem;
+    height: 10rem; }
+    .brandsContent img:hover {
+      transform: scale(1.08);
+      transition: 0.4s;
+      cursor: pointer; }
+
+.brandsItem {
+  height: 10rem; }
+
+#contactBody {
+  background-image: url("http://www.mentorlogix.com/wp-content/uploads/2017/09/contact_background.png");
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#contact {
+  width: 100%;
+  height: 100%;
+  padding-top: 3.125rem; }
+
+form {
+  margin: auto;
+  width: 55%; }
+  form textarea {
+    margin-top: 1.875rem;
+    height: 12.5rem;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+    color: #ccc;
+    padding: 0.625rem;
+    transition: all 0.5s ease-in-out; }
+    form textarea:focus {
+      box-shadow: 0 0 25px #ccc;
+      transform: scale(1.05); }
+  form input {
+    width: 47%;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    height: 3.0625rem;
+    background-color: transparent;
+    color: #ccc; }
+    form input:focus {
+      box-shadow: 0 0 25px #ccc;
+      transform: scale(1.05); }
+  form #footerAbout {
+    width: 6.25rem; }
+
+.formName {
+  float: left; }
+
+.formMail {
+  float: right; }
+
+#contactTitle {
+  padding-top: 4.375rem;
+  text-align: center;
+  color: #cccccc;
+  font-family: "Bilbo Swash Caps", 'sans-serif'; }
+  #contactTitle h1 {
+    font-size: 3.75rem; }
+
+.send {
+  float: right;
+  width: 15%;
+  height: 3.0625rem;
+  text-align: center;
+  margin-top: 0.9375rem;
+  cursor: pointer;
+  background-color: #040427;
+  border: none;
+  color: blanchedalmond;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 0.3125rem; }
+
+.contactMenu {
+  background: linear-gradient(white, #c6c6c6); }
+
+#footer {
+  border: none;
+  margin-top: 1.5625rem;
+  height: 3.125rem;
+  background: linear-gradient(#3d2e42, black);
+  text-align: right; }
+  #footer p {
+    margin-right: 2.1875rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+    font-family: "Andalus", "sans-serif";
+    font-size: 0.875rem;
+    color: navajowhite;
+    float: right;
+    width: 30%; }
+  #footer .footerItem {
+    list-style-type: none;
+    display: inline-flex;
+    float: left;
+    width: 30%;
+    padding-top: 1rem;
+    margin-bottom: 0rem; }
+    #footer .footerItem li {
+      text-decoration: none;
+      list-style-type: none;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      border-right: 1px solid navajowhite; }
+    #footer .footerItem a {
+      color: navajowhite;
+      font-family: "Andalus", "sans-serif";
+      font-size: 0.6875rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+  #footer .footerItem li:last-child {
+    border-right: none; }
+
+.parallax {
+  /* The image used */
+  background-image: url("https://srcc.oboi.ws/wallpapers/big_2021_oboi_chernaja_kozha_v_podtekah.jpg");
+  /* Set a specific height */
+  height: 17.5rem;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallaxContent {
+  padding-top: 6.5625rem; }
+  .parallaxContent div {
+    display: inline-block;
+    color: #f5f5f5;
+    font-family: "Open Sans", SansSerif; }
+
+.container {
+  max-width: 100%; }
+
+#back-to-top {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  color: #444;
+  cursor: pointer;
+  font-size: 2.5rem;
+  border: 0;
+  border-radius: 100%;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  background-color: darkkhaki; }
+
+#back-to-top.show {
+  opacity: 1; }
+
+.customerItem {
+  width: 75%; }
+  .customerItem img {
+    height: 15.625rem;
+    width: 100%;
+    border-radius: 10%; }
+
+#customer {
+  background-color: #ececec;
+  padding-bottom: 3.125rem; }
+  #customer h2 {
+    text-align: center;
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    padding-top: 5rem;
+    font-size: 2.9375rem;
+    color: #505050; }
+
+.customerPart {
+  padding-top: 2.5rem; }
+
+.socialContent {
+  display: inline-flex;
+  text-decoration: none;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 1.875rem;
+  cursor: pointer;
+  padding-left: 0; }
+  .socialContent li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: auto; }
+    .socialContent li img {
+      width: 3.125rem;
+      height: 3.125rem;
+      opacity: 0.8; }
+
+#socialNetwork {
+  height: 10.625rem;
+  background-color: #3d2e42; }
+
+/*# sourceMappingURL=style.css.map */

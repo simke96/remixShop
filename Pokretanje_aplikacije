@@ -1,0 +1,8 @@
+1. Potrebno je instalirati module:
+    npm install
+
+2. Ukoliko se pokreće aplikacija preko terminala:
+    npm start ../www
+
+3. Pokrenuti aplikaciju u browseru preko url adrese:
+    localhost:3000

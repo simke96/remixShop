@@ -1,0 +1,87 @@
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  #menu {
+    opacity: 0.93;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 55;
+    //background: #555C63;
+    background: linear-gradient(black, gray, white);
+    height: rem(60);
+    #logo {
+      float: left;
+      margin-top: rem(0);
+      margin-left: rem(50);
+      img{
+        height : rem(60);
+        width : rem(250);
+      }
+    }
+    #sideMenu {
+      text-align: center;
+      height: rem(60);
+      .img0 {
+        height: rem(60)
+      }
+      span{
+        float: right;
+        margin-right: rem(30);
+      }
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        font-family: 'Bilbo Swash Caps','sans-serif';
+        right: 0;
+        background-color: black;
+
+        overflow-x: hidden;
+        padding-top: rem(60);
+        transition: 0.5s;
+
+        a, #ukupnaCena {
+          text-align: center;
+          padding: rem(8) rem(8) rem(8) rem(32);
+          text-decoration: none;
+          font-size: rem(40);
+          font-family: 'Bilbo Swash Caps','sans-serif';
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        a:hover, .offcanvas a:focus {
+          color: #f1f1f1;
+        }
+        .closebtn {
+          position: absolute;
+          top: 0;
+          right: rem(25);
+          font-size: rem(36);
+          margin-left: rem(50);
+        }
+      }
+    }
+  }
+}
+#zbir{
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  margin-top: rem(150);
+  p{
+    margin-bottom: 0;
+  }
+  input{
+    border: none;
+    font-size: rem(30);
+    background-color: transparent;
+    text-align: right;
+    width:63%;
+    color: white;
+  }
+
+}

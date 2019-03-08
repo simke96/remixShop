@@ -1,0 +1,22 @@
+.customerItem {
+  width: 75%;
+  img{
+    height: rem(250);
+    width: 100%;
+    border-radius: 10%;
+  }
+}
+#customer{
+  background-color: #ececec;
+  padding-bottom: rem(50);
+  h2{
+    text-align: center;
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    padding-top: rem(80);
+    font-size: rem(47);
+    color: #505050;
+  }
+}
+.customerPart{
+  padding-top: rem(40);
+}

@@ -1,0 +1,30 @@
+
+.slider-inner, .slideImage{
+  height: rem(670);
+}
+.firstSliderText{
+  position: absolute;
+  top:rem(250);
+  right: 15%;
+  p{
+    color: $whitesmoke;
+    font-size: rem(42);
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    line-height: rem(30);
+  }
+}
+.secondSliderText{
+  position: absolute;
+  top: rem(570);
+  padding-left: rem(190) ;
+  height: rem(100);
+  background-color: #d2be9b;
+  opacity: 0.8;
+  p{
+    color: #674133;
+    font-size: rem(44);
+    margin-top: rem(14);
+    font-family: "Bilbo Swash Caps", 'sans-serif';
+    line-height: rem(35);
+  }
+}

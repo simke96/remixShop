@@ -1,0 +1,756 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title ReMix Shop
+        link(href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/animate.css')
+        link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='javascripts/bootstrap.js')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        script(type='text/javascript', src='javascripts/canvas.js')
+        script(type='text/javascript', src='javascripts/main.js')
+    body
+        // Start header-a
+        header
+            #menu
+                #logo
+                    a(href='#')
+                        img(src='images/logo2.png')
+                #sideMenu
+                    #mySidenav.sidenav
+                        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+                        a(href='#') Proizvodi
+                            a(href='home') O nama
+                            a(href='kontakt') Kontakt
+                        #zbir
+                            p#ukupnaCena Ukupan zbir:
+                            input#amount(name='amount', placeholder='0', type='text')
+                    span(onclick='openNav()')
+                        img.img0(src='images/menu.png')
+        // End header-a
+        // arrow which back to top
+        a#back-to-top(href='#', title='Back to top') ↑
+        // end code
+        #slider.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#slider', data-slide-to='0')
+                li(data-target='#slider', data-slide-to='1')
+                li(data-target='#slider', data-slide-to='2')
+            .slider-inner
+                .carousel-item.active
+                    img.slideImage.d-block.w-100(src='images/contact3.jpg', alt='First slide')
+                    .firstSliderText
+                        p
+                            | "Da bi neko bio nezamenljiv,
+                            br
+                            |  uvek mora da bude drugaciji."
+                            br
+                            br
+                            | Gabrielle Bonheur
+                .carousel-item
+                    img.slideImage.d-block.w-100(src='images/shopping4.jpeg', alt='Second slide')
+                    .secondSliderText
+                        p
+                            | Pronadji ono sto zelis,
+                            br
+                            |  bez gubljenja svog vremena.
+                .carousel-item
+                    img.slideImage.d-block.w-100(src='images/shop3.jpg', alt='Third slide')
+        // End slider-a
+        // Start tabs
+        section#tabs
+            .content
+                #tabsHead
+                    h2 Dostupni proizvodi
+                #myModal1.modal.fade(role='dialog')
+                    .modal-dialog
+                        // Modal content
+                        .modal-content
+                            .modal-header
+                                // <h4 class="modal-title"></h4>
+                                button.close(type='button', data-dismiss='modal') ×
+                            .modal-footer
+                                img.bigImage(src='')
+                ul.tab
+                    li.tablinks.current(data-tab='tab1') Najnovije
+                    li.tablinks(data-tab='tab2') Odeca
+                    li.tablinks(data-tab='tab3') Oprema
+                    li.tablinks(data-tab='tab4') Racunari
+                    li.tablinks(data-tab='tab5') Garnitura
+                #tab1.tabcontent.current
+                    #first_tab.currentTab.animated.fadeInLeft
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Star Wars
+                                p.article_price 1500 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1500', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual1.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Durbin
+                                p.article_price 3450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual2.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim Dinosaurusa
+                                p.article_price 2200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2200', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual4.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Visefunkcionalni otvarač
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual5.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majice
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual7.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Iphone punjač
+                                p.article_price 2100 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2100', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual8.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Vaza
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual10.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Screenshot naočare
+                                p.article_price 2400 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2400', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual11.gif', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Šolja animacija
+                                p.article_price 220 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='220', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual%2012.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Solja Classic
+                                p.article_price 180 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='180', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual13.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Sveća Zmaj
+                                p.article_price 300 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='300', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual14.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Držač za čase
+                                p.article_price 600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='600', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual15.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Držač za Iphone
+                                p.article_price 1200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1200', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual16.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Budilnik
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual17.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim za mačku
+                                p.article_price 450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual19.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim za mačku
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual21.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Magnet za čepove
+                                p.article_price 200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='200', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual22.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Drinko igra
+                                p.article_price 600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='600', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusual23.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Dreger
+                                p.article_price 1600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1600', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/unusual/unusua17.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name USB sat
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                        .more_articles
+                            .row
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Beer-Pong
+                                    p.article_price 2100 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='2100', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink1.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Iphone vodka
+                                    p.article_price 1100 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='1100', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink3.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Otvarač za pivo
+                                    p.article_price 150 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='150', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink4.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Plutajući hladnjak
+                                    p.article_price 2800 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='2800', type='checkbox')
+                                        | Naruči
+                            .row
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink5.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Neon čaše
+                                    p.article_price 500 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='500', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink7.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Šifra za piće
+                                    p.article_price 250 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='250', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drink8.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Čaše za beer pong
+                                    p.article_price 300 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='300', type='checkbox')
+                                        | Naruči
+                                .articles(class='col-2.5')
+                                    img(src='images/unusual/drinkg13.jpg', data-toggle='modal', data-target='#myModal1')
+                                    p.article_name Držač za pivo
+                                    p.article_price 350 rsd
+                                    label
+                                        input.my-activity(name='kupovina', value='350', type='checkbox')
+                                        | Naruči
+                        .see_more
+                            p.vidiJos ↓ Vidi još proizvoda ↓
+                        // Modal
+                #tab2.tabcontent
+                    .currentTab.animated.fadeInLeft
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes8.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Beer
+                                p.article_price 500 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='500', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes9.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Food
+                                p.article_price 450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes10.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Speaker
+                                p.article_price 550 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='550', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes11.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Classic
+                                p.article_price 400 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='400', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes12.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Minion papuče
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes13.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kućne papuče
+                                p.article_price 500 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='500', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothes14.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kapa
+                                p.article_price 400 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='400', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Prsluk za psa
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1500', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Duks
+                                p.article_price 1700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing1.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Neon patike
+                                p.article_price 3600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3600', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing2.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim Psa
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing3.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim Delfin
+                                p.article_price 2700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2700', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing4.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kostim Orla
+                                p.article_price 3450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing5.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Jakna
+                                p.article_price 3900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3900', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing6.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Lion
+                                p.article_price 350 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='350', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/clothes/clothing7.jpg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Majica Vans
+                                p.article_price 600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='600', type='checkbox')
+                                    | Naruči
+                #tab3.tabcontent
+                    .currentTab.animated.fadeInLeft
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Reketi za stoni tenis
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport1.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Spalding lopta
+                                p.article_price 1100 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1100', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport2.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Reketi za badminton
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport3.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Sobni bicikl
+                                p.article_price 9000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='9000', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport4.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Rukavice za džak
+                                p.article_price 600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='600', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport5.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Klizaljke
+                                p.article_price 1450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport6.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Ekspander
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport7.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Lopta za ragbi
+                                p.article_price 1600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1600', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport8.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kaciga za motor
+                                p.article_price 3100 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3100', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport9.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Vijača
+                                p.article_price 600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='600', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport10.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kaciga za motor
+                                p.article_price 3200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3200', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport11.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Naočare za skijanje
+                                p.article_price 2200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2200', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport12.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Golmanske rukavice
+                                p.article_price 1100 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1100', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport13.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Kruska za udaranje
+                                p.article_price 2900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1500', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/sport/sport14.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Lopta za odbojku
+                                p.article_price 700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='700', type='checkbox')
+                                    | Naruči
+                #tab4.tabcontent
+                    .currentTab.animated.fadeInLeft
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Karaoke zvučnici
+                                p.article_price 11000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='11000', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer1.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name USB miš
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer2.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Lenovo punjač
+                                p.article_price 6000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='6000', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer3.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Zvučnici 2.1
+                                p.article_price 3900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3900', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer4.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Univerzalni punjač
+                                p.article_price 900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='900', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer5.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Stampač
+                                p.article_price 7000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='7000', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer6.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Monitor 21.5"
+                                p.article_price 9800 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='9800', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer7.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Laptop HP Pavilion G6
+                                p.article_price 42000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='42000', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer8.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Baterije za miš AA+
+                                p.article_price 450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer9.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Elite monitor 22.5"
+                                p.article_price 11000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='11000', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer10.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Torba za laptop
+                                p.article_price 2200 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2200', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/computer/computer11.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Bluetooth slušalice
+                                p.article_price 1700 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1700', type='checkbox')
+                                    | Naruči
+                #tab5.tabcontent
+                    .currentTab.animated.fadeInLeft
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Mali pokretni sto
+                                p.article_price 1800 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='1800', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture1.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Stalak za stvari
+                                p.article_price 2100 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='2100', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture2.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Sto
+                                p.article_price 3400 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3400', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture3.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Pokretni sto
+                                p.article_price 3600 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3600', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture4.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Drveni sto + stolice
+                                p.article_price 8400 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='8400', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture5.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Drvena fotelja
+                                p.article_price 3450 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='3450', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture6.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Univerzalni sto
+                                p.article_price 4800 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='4800', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture7.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name TV sto
+                                p.article_price 16000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='16000', type='checkbox')
+                                    | Naruči
+                        .row
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture8.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Okrugli sto
+                                p.article_price 8000 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='8000', type='checkbox')
+                                    | Naruči
+                            .articles(class='col-2.5')
+                                img(src='images/furniture/furniture9.jpeg', data-toggle='modal', data-target='#myModal1')
+                                p.article_name Fotelja sa držačima
+                                p.article_price 9900 rsd
+                                label
+                                    input.my-activity(name='kupovina', value='9900', type='checkbox')
+                                    | Naruči
+        // End tabs
+        // Data about shop
+        section#podaci.parallax
+            .overlay
+                .container
+                    .parallaxContent.text-center.white.wow.animated.fadeInDown
+                        .col-lg-2
+                            | 11281
+                            br
+                            |  Zadovoljnih klijenata
+                        .col-lg-2
+                            | 8.9/10
+                            br
+                            |  Prosečna ocena
+                        .col-lg-2
+                            | 24/7
+                            br
+                            |  Radno vreme
+                        .col-lg-2
+                            | 16450
+                            br
+                            |  Narudžbina
+        // End
+        // Customers
+        section#customer
+            h2 ________ Zadovoljni kupci _________
+            .customerPart
+                .customerItem.row
+                    .col-lg-5
+                        img(src='images/customer/boxing.jpeg')
+                    .col-lg-7
+                        img(src='images/customer/family1.jpg')
+                .customerItem.row
+                    .col-lg-7
+                        img(src='images/customer/house.jpg')
+                    .col-lg-5
+                        img(src='images/customer/kid.jpg')
+                .customerItem.row
+                    .col-lg-5
+                        img(src='images/customer/family.jpg')
+                    .col-lg-7
+                        img(src='images/customer/kid1.jpg')
+        // End
+        section#socialNetwork
+            ul.socialContent
+                li
+                    a(href='https://www.facebook.com/')
+                        img(src='images/socialNetwork/fb.png')
+                li
+                    a(href='https://www.youtube.com/')
+                        img(src='images/socialNetwork/youtube.png')
+                li
+                    a(href='https://twitter.com/')
+                        img(src='images/socialNetwork/twitter.png')
+                li
+                    a(href='https://www.instagram.com/')
+                        img(src='images/socialNetwork/inst.png')
+                li
+                    a(href='https://mixi.jp/')
+                        img(src='images/socialNetwork/mixiLogo.png')
+            section#footer
+                ul.footerItem
+                    li
+                        a(href='#slider') Početak
+                    li
+                        a(href='#tabs') Proizvodi
+                    li
+                        a(href='#podaci') Statistika
+                    li
+                        a(href='#customer') Kupci
+                p Copyright © 2018 Online ReMix Shop

@@ -1,0 +1,230 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title ReMix Shop
+        link(href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/animate.css')
+        link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(type='text/javascript', src='javascripts/canvas.js')
+        script(src='javascripts/bootstrap.js')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+            script(type='text/javascript', src='javascripts/main.js')
+    body#aboutUs
+        header
+            #menu
+                #logo
+                    a(href='index.html')
+                        img(src='images/logo2.png')
+                #sideMenu
+                    #mySidenav.sidenav
+                        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+                         a(href='kupovina') Proizvodi
+                        a(href='home') O nama
+                        a(href='kontakt') Kontakt
+                    span(onclick='openNav()')
+                        img.img0(src='images/menu.png')
+        #headerAbout_photo
+            img(src='images/shopping8.jpeg')
+        #aboutUsItem
+            section#aboutUsHeader
+                h1 O nama
+            section#aboutUsContent
+                h5 KO SMO MI?
+                p
+                    | ReMix Shop je brend koji je postao prepoznatljiv zahvaljujući permanentnom prisustvu na tržištu čitavog regiona od 1998. godine. U proteklom periodu postali smo jedan od lidera na tržištu u oblasti koja se zove direktna TV prodaja (DRTV). Pored direktne TV prodaje, kao osnovne delatnosti, TV Shop Direct International razvija online prodaju putem svoje web prodavnice,  retail prodaju, odnosno plasman proizvoda putem lanca ReMix Shop prodavnica i vodećih trgovinskih lanaca i katalošku prodaju. U svojoj ponudi Imamo veliki asortiman, od proizvoda za kuću, teretanu i odece, lepotu I fitness, kao i proizvode za decu, racunare…
+                h5 ReMix Shop tim
+                p
+                    | ReMix Shop ima razvijenu logistiku koja uključuje: call centar, distribuciju proizvoda, marketing, uvoz-izvoz,  maloprodaju, veleprodaju, online prodaju, katalošku prodaju… Svi članovi TV Shop tima su profesionalno obučeni i maksimalno posvećeni svom poslu, a sve u cilju da našim kupcima pružimo najbolje proizvode, po pristupačnoj ceni, uz profesionalnu uslugu.
+                h5 ŠTA NUDIMO?
+                p
+                    | - Kvalitetne i inovativne proizvode
+                    br
+                    |                             - Pristupačne cene
+                    br
+                    |                             - Profesionalnu brigu o kupcima
+                    br
+                    |                             - Brzu dostavu
+                    br
+                    |                             - Online i katalosku prodaju
+                    br
+                h5 NAŠA MISIJA
+                p
+                    | ReMix Shop je brend koji je postao prepoznatljiv po svojoj misiji da doprinese boljem kvalitetu života svojih kupaca zahvaljujući širokoj paleti proizvoda u svojoj ponudi - od  proizvoda za kuću, kuhinju i čišćenje do fitness proizvoda i proizvoda za zdravlje i lepotu, kao i proizvoda za decu.
+                    br
+                    br
+                    |                            Specifičnost ovih proizvoda i njihova originalna primena i različitost nameću se kao potreba u savremenom životu.
+                    br
+                    br
+                    |                            ReMix Shop posluje kao ekskluzivni zastupnik i distributer najpoznatijih svetskih kompanija čije proizvode uvozi i plasira u Srbiji i Crnoj Gori, a trenutno emituje svoje komercijalne prezentacije i spotove na preko 40 TV kanala. TV prodaja ima logističku podršku u vidu Call centra i distribucije proizvoda u Beogradu i Podgorici.
+                    br
+                    br
+                    |                            Tokom godina postojanja ReMix Shop prodaje na našem tržištu kupci su stvorili naviku da kupuju iz udobnosti svog doma, tako da je i na ovim prostorima zaživeo jedan novi način kupovine, a TV Shop Direct International je imao svoj doprinos u tome.
+                h5 VIZIJA
+                p
+                    | ReMix Shop je  kompanija u brzom razvoju koja teži da očuva svoju lidersku poziciju u oblasti direktne TV prodaje i na budućnost gleda kao na mogućnost za uspeh, koji će se ogledati kroz zadovoljstvo svih interesnih strana — naših kupaca, partnera, zaposlenih, vlasnika i celokupnog društva. Globalni trend razvoja online trgovine uslovio je da i TV Shop Direct International dodatno razvija ovaj način prodaje.
+                    br
+                    |                            TDI planira da se u naredne 3 godine još više razvija, produbljuje i  učvršćuje svoje odnose sa stranim poslovnim partnerima, odnosno isporučiocima ili dobavljačima, kao i sa domaćim TV kanalima, da investira u web prodavnicu i internet marketing,  jer su to najbitniji činioci za uspešnost posla kojim se bavi.
+                    |                            Dalje jačanje brenda ReMix Shop i njegov pozitivan imidž je takođe cilj kome TDI teži.
+        // people
+        section#team
+            h2 NAŠ TIM
+            #slider.carousel.slide(data-ride='carousel')
+                ol.carousel-indicators
+                    li.active(data-target='#slider', data-slide-to='0')
+                    li(data-target='#slider', data-slide-to='1')
+                    li(data-target='#slider', data-slide-to='2')
+                #sliderHeight.slider-inner
+                    .carousel-item.active
+                        .teamSection.row
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person1.jpg')
+                                .peopleData
+                                    h5.name Jelena Krstić
+                                    p.position
+                                        i Menadžer
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person2.jpeg')
+                                .peopleData
+                                    h5.name Aleksa Marković
+                                    p.position
+                                        i Poslodavac
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person3.jpeg')
+                                    h5.name Andjela Mišić
+                                    p.position
+                                        i Komercijalista
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person4.jpg')
+                                .peopleData
+                                    h5.name Miloš Nenadović
+                                    p.position
+                                        i Team lider
+                    .carousel-item
+                        .teamSection.row
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person12.jpeg')
+                                .peopleData
+                                    h5.name Ana Zivadinović
+                                    p.position
+                                        i Pomoćni menadzer
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person5.jpg')
+                                .peopleData
+                                    h5.name Jenny Hindi
+                                    p.position
+                                        i Prevodilac
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person6.jpeg')
+                                .peopleData
+                                    h5.name Kevin Sindy
+                                    p.position
+                                        i Dobavljač
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person7.jpeg')
+                                .peopleData
+                                    h5.name Andrijana Nešić
+                                    p.position
+                                        i Računovodja
+                    .carousel-item
+                        #teamSect.teamSection.row
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person8.jpeg')
+                                .peopleData
+                                    h5.name Nevena Milošević
+                                    p.position
+                                        i Zamenik direktora
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person9.jpeg')
+                                .peopleData
+                                    h5.name Milan Arsić
+                                    p.position
+                                        i Računovodja
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person10.jpeg')
+                                .peopleData
+                                    h5.name Min Su
+                                    p.position
+                                        i Dobavljač
+                            .people(class='col-lg-2.5')
+                                .peopleImage
+                                    img(src='images/person/person11.jpeg')
+                                .peopleData
+                                    h5.name Miloš Simić
+                                    p.position
+                                        i Obezbedjenje
+        // end people
+
+
+        // Start brands
+    section#brands
+        h2.brandsTitle Brendovi
+        .brandsContent.row
+            .brandsItem.col-lg-3
+                a(href='https://store.hp.com/us/en')
+                    img(src='images/brands/logo1.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.ikea.com/')
+                    img(src='images/brands/logo2.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.nike.com')
+                    img(src='images/brands/logo3.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.asus.com/us/')
+                    img(src='images/brands/logo4.png')
+        .brandsContent.row
+            .brandsItem.col-lg-3
+                a(href='https://www.adidas.com/us/')
+                    img(src='images/brands/logo5.jpeg')
+            .brandsItem.col-lg-3
+                a(href='https://www.lg.com/us')
+                    img(src='images/brands/logo6.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.cisco.com')
+                    img(src='images/brands/logo7.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.nokia.com/en_int')
+                    img(src='images/brands/logo8.png')
+        .brandsContent.row
+            .brandsItem.col-lg-3
+                a(href='https://mmlafleur.com')
+                    img(src='images/brands/logo9.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.nvidia.com/page/home.html')
+                    img(src='images/brands/logo10.jpeg')
+            .brandsItem.col-lg-3
+                a(href='https://www.huawei.com/us/')
+                    img(src='images/brands/logo11.jpeg')
+            .brandsItem.col-lg-3
+                a(href='https://www.apple.com')
+                    img(src='images/brands/logo12.jpeg')
+        .brandsContent.row
+            .brandsItem.col-lg-3
+                a(href='https://www.levi.com/US/en_US/')
+                    img(src='images/brands/logo13.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.puma.com')
+                    img(src='images/brands/logo14.png')
+            .brandsItem.col-lg-3
+                a(href='https://themoneyteam.com/')
+                    img(src='images/brands/logo15.png')
+            .brandsItem.col-lg-3
+                a(href='https://www.gucci.com/us/en/')
+                    img(src='images/brands/logo16.jpeg')
+
+    section#footer
+        p Copyright © 2018 Online ReMix Shop

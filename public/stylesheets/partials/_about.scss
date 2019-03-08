@@ -1,0 +1,139 @@
+
+#headerAbout_photo img{
+  height: rem(400);
+  width: 100%;
+}
+#footerAbout{
+  margin-top: 0;
+}
+#aboutUsHeader h1{
+  font-family: "Bilbo Swash Caps", 'sans-serif';
+  text-align: center;
+  margin-top: rem(50);
+  color: #525567;
+  font-size: 48px;
+  line-height: 29px;
+}
+#aboutUsContent{
+  width: 80%;
+  margin: auto;
+  margin-top: rem(50);
+  h5{
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    line-height: rem(20);
+    font-size: rem(16);
+    font-weight: bold;
+    color: #525567;
+    margin-top: rem(40);
+  }
+  p{
+    font-family: "Open Sans",sans-serif;
+    line-height: rem(20);
+    font-size: rem(16);
+    color: #525567;
+    border-bottom: 1px dotted silver;
+    padding-bottom: rem(40);
+    &:last-child{
+      border-bottom: none;
+      margin-bottom: rem(0);
+    }
+  }
+}
+
+
+//Person section start
+
+.peopleImage{
+  img{
+    border-radius: 100%;
+    width: rem(200);
+    height: rem(200);
+  }
+}
+.people{
+  color: #b3b3b3;
+  margin: auto;
+  text-align: center;
+}
+.teamSection{
+  padding-top: rem(90);
+  width: 80%;
+  margin: auto;
+}
+#team{
+  margin-top: rem(70);
+  color:#b3b3b3;
+  background-image: url("https://srcc.oboi.ws/wallpapers/big_2021_oboi_chernaja_kozha_v_podtekah.jpg");
+
+  /* Set a specific height */
+  height: rem(650);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: rem(40);
+  padding-bottom: rem(60);
+  color: #525567;
+  font-family: "Open Sans","SansSerif";
+  h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: rem(35);
+    margin-top: rem(50);
+    font-family: "Open Sans","SansSerif";
+    color:#b3b3b3;
+  }
+  h5{
+    margin-top: rem(20);
+    font-size: rem(18);
+  }
+}
+.carousel-indicators li{
+  background-color: gray;
+}
+.carousel-indicators .active{
+  background-color: white;
+}
+#sliderHeight{
+  height: rem(470);
+}
+
+
+//Brendovi
+#brands{
+  padding-bottom: rem(60);
+}
+.brandsTitle{
+  padding-top: rem(70);
+  padding-bottom: rem(50);
+  text-align: center;
+  font-family: "Open Sans","SansSerif";
+  color: #111111;
+  font-style: rem(43);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.brandsContent{
+  width: 80%;
+  margin: auto;
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  img{
+    margin: auto;
+    display: block;
+    width: rem(160);
+    height: rem(160);
+    &:hover{
+      transform: scale(1.08);
+      transition: 0.4s;
+      cursor: pointer;
+    }
+  }
+}
+.brandsItem{
+  height: rem(160);
+}
+

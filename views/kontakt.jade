@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title ReMix Shop
+        link(href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps', rel='stylesheet')
+        link(rel='stylesheet', type='text/css', href='stylesheets/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/animate.css')
+        link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+        link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(type='text/javascript', src='javascripts/bootstrap.js')
+        script(type='text/javascript', src='javascripts/canvas.js')
+        script(type='text/javascript', src='javascripts/main.js')
+
+    body#contactBody
+        header
+            #menu.contactMenu
+                #logo
+                    a(href='index.html')
+                        img(src='images/logo2.png')
+                #sideMenu
+                    #mySidenav.sidenav
+                        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+                        a(href='kupovina') Proizvodi
+                            a(href='home') O nama
+                            a(href='#') Kontakt
+                    span(onclick='openNav()')
+                        img.img0(src='images/menu.png')
+        section#contactTitle
+            h1 Kontaktirajte nas
+        #contact
+            section.contactForm
+                form(name='Forma')
+                    .nameMail
+                        input.formName(minlength='2', placeholder='Unesite ime...', required='', type='text')
+                        input.formMail(minlength='8', placeholder='Unesite mail...', required='', type='email')
+                        textarea.col-lg-12(minlength='10', placeholder='Unesite poruku...', required='')
+                    input.send(value='Pošalji', type='submit')

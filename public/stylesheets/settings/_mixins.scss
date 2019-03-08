@@ -1,0 +1,48 @@
+//mixin
+
+@mixin button($wid, $hei, $col, $bgc){
+  width: $wid;
+  height:$hei;
+  color: $col;
+  background-color: $bgc;
+  border: 1px solid black;
+}
+@mixin border($size, $col){
+  border: $size solid $col;
+}
+
+//@mixin grid() {
+//  @content;
+//}
+
+@mixin small() {
+  @media only screen and (max-width: 640px){
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (min-width: 641px)and(max-width: 1023px){
+    @content;
+
+  }
+}
+
+@mixin large() {
+  @media only screen and (min-width: 1024px){
+    @content;
+
+  }
+}
+
+@mixin nexus(){
+  @media only screen and (min-width: 480px)and(max-width: 640px){
+    @content;
+}
+}
+
+@mixin xlarge(){
+  @media only screen and (min-width: 1200px){
+  @content;
+  }
+}
